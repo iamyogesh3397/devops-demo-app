@@ -29,7 +29,10 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
-
+      - name: Debug secret presence
+        run: |
+          if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ]; then echo "USERNAME MISSING"; else echo "USERNAME OK"; fi
+          if [ -z "${{ secrets.DOCKERHUB_TOKEN }}" ]; then echo "TOKEN MISSING"; else echo "TOKEN OK"; fi
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
