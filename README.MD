@@ -84,7 +84,7 @@ Install these locally (all free, no signup required except GitHub/Docker Hub acc
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/devops-demo-app.git
+git clone https://github.com/iamyogesh3397/devops-demo-app.git
 cd devops-demo-app
 ```
 
