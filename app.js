@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello from the free DevOps pipeline!', version: '1.0.0' });
+  res.json({ message: 'Hello from Yogesh Kumar', version: '1.0.0' });
 });
 
 app.get('/health', (req, res) => {
